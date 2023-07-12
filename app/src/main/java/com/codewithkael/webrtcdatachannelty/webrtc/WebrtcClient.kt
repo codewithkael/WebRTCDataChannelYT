@@ -41,8 +41,8 @@ class WebrtcClient @Inject constructor(
     }
 
     private val iceServer = listOf(
-        PeerConnection.IceServer.builder("turn:185.246.66.75:3478")
-            .setUsername("user").setPassword("password").createIceServer()
+        PeerConnection.IceServer.builder("turn:openrelay.metered.ca:443?transport=tcp")
+            .setUsername("openrelayproject").setPassword("openrelayproject").createIceServer()
     )
 
     init {
